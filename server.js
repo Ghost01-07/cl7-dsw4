@@ -1,6 +1,7 @@
 import express from "express";
 import { postRoutes } from "./routes/post.js";
 import mongoose from "mongoose";
+import fs from 'fs';
 import bodyParser from "body-parser";
 import * as dotenv from 'dotenv'
 dotenv.config();
