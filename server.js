@@ -15,7 +15,6 @@ app.use('/api/post', postRoutes);
 
 mongoose.connect(DB, {
     ssl: true,   // Asegura que SSL esté habilitado
-    sslValidate: true,  // Opcional, asegura que el certificado SSL sea validado
 })
     .then(() => console.log('Connected to MongoDB successfully'))
     .catch(err => console.error('MongoDB connection error:', err));
